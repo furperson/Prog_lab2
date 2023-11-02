@@ -1,0 +1,87 @@
+@startuml
+class ru.furp.lab_prog2.M_Attacks.Foul_Play {
+# double calcBaseDamage(Pokemon,Pokemon)
+# double calcCriticalHit(Pokemon,Pokemon)
+# String describe()
+}
+class ru.furp.lab_prog2.Main {
++ {static} void main(String[])
+}
+class ru.furp.lab_prog2.M_Attacks.Confide {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class ru.furp.lab_prog2.M_Attacks.Fury_Attack {
+# void set_power(int)
+# double calcBaseDamage(Pokemon,Pokemon)
+# String describe()
+}
+class ru.furp.lab_prog2.M_Attacks.Aqua_Ring {
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+class ru.furp.lab_prog2.M_Pokemons.Nidoran_M {
+}
+class ru.furp.lab_prog2.M_Pokemons.Klefki {
+}
+class ru.furp.lab_prog2.M_Pokemons.Seel {
+}
+class ru.furp.lab_prog2.M_Attacks.Draining_Kiss {
+# void applySelfDamage(Pokemon,double)
+# String describe()
+}
+class ru.furp.lab_prog2.M_Pokemons.Nidorino {
+}
+class ru.furp.lab_prog2.M_Attacks.Thunderbolt {
+# String describe()
+# void applyOppEffects(Pokemon)
+}
+class ru.furp.lab_prog2.M_Attacks.Frost_Breath {
+# double calcCriticalHit(Pokemon,Pokemon)
+# String describe()
+}
+class ru.furp.lab_prog2.M_Pokemons.Nidoking {
+}
+class ru.furp.lab_prog2.M_Attacks.Poison_Sting {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class ru.furp.lab_prog2.M_Pokemons.Dewgong {
+}
+class ru.furp.lab_prog2.M_Attacks.Mirror_Shot {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class ru.furp.lab_prog2.M_Attacks.Swagger {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class ru.furp.lab_prog2.M_Attacks.Aurora_Beam {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class ru.furp.lab_prog2.M_Attacks.Take_Down {
+# void applySelfDamage(Pokemon,double)
+# String describe()
+}
+
+
+ru.ifmo.se.pokemon.PhysicalMove <|-- ru.furp.lab_prog2.M_Attacks.Foul_Play
+ru.furp.lab_prog2.M_Attacks.StatusMove <|-- ru.furp.lab_prog2.M_Attacks.Confide
+ru.ifmo.se.pokemon.PhysicalMove <|-- ru.furp.lab_prog2.M_Attacks.Fury_Attack
+ru.furp.lab_prog2.M_Attacks.StatusMove <|-- ru.furp.lab_prog2.M_Attacks.Aqua_Ring
+ru.ifmo.se.pokemon.Pokemon <|-- ru.furp.lab_prog2.M_Pokemons.Nidoran_M
+ru.furp.lab_prog2.M_Pokemons.Pokemon <|-- ru.furp.lab_prog2.M_Pokemons.Klefki
+ru.ifmo.se.pokemon.Pokemon <|-- ru.furp.lab_prog2.M_Pokemons.Seel
+ru.ifmo.se.pokemon.SpecialMove <|-- ru.furp.lab_prog2.M_Attacks.Draining_Kiss
+ru.ifmo.se.pokemon.Pokemon <|-- ru.furp.lab_prog2.M_Pokemons.Nidorino
+ru.furp.lab_prog2.M_Attacks.SpecialMove <|-- ru.furp.lab_prog2.M_Attacks.Thunderbolt
+ru.ifmo.se.pokemon.SpecialMove <|-- ru.furp.lab_prog2.M_Attacks.Frost_Breath
+ru.ifmo.se.pokemon.Pokemon <|-- ru.furp.lab_prog2.M_Pokemons.Nidoking
+ru.furp.lab_prog2.M_Attacks.PhysicalMove <|-- ru.furp.lab_prog2.M_Attacks.Poison_Sting
+ru.ifmo.se.pokemon.Pokemon <|-- ru.furp.lab_prog2.M_Pokemons.Dewgong
+ru.furp.lab_prog2.M_Attacks.SpecialMove <|-- ru.furp.lab_prog2.M_Attacks.Mirror_Shot
+ru.furp.lab_prog2.M_Attacks.StatusMove <|-- ru.furp.lab_prog2.M_Attacks.Swagger
+ru.furp.lab_prog2.M_Attacks.SpecialMove <|-- ru.furp.lab_prog2.M_Attacks.Aurora_Beam
+ru.ifmo.se.pokemon.PhysicalMove <|-- ru.furp.lab_prog2.M_Attacks.Take_Down
+@enduml
